@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-20">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Content Management Tool</title>
+</head>
+<body class="bg-yellow-400">
+    <header class="flex justify-center align-center bg-gradient-to-b from-yellow-600 ">
+        <h1 class="text-[5em] p-7 font-bold font-crotah text-white ">The Blog Maker</h1>
+    </header>
+     <div class=" p-14 flex justify-evenly">
+    <section class=" m-2 max-w-[500px] bg-yellow-300  p-14 text-white font-mono shadow-md rounded-lg">
+        <form class="gap-14" id="BlogForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input class="rounded-md shadow-md text-black" type="text" id="title" name="title" required>
+
+            </div>
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea class="rounded-lg shadow-md text-black" id="content" name="content" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="video">Video</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+            </div>
+            <div >
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </section>
+    <section class=" m-2 max-w-[500px] bg-yellow-300  p-14 text-white font-mono shadow-md rounded-lg">
+       
+        <div id="submitted-content">
+            <h1></h1>
+            <p><strong></strong><span id="title-display"></span></p>
+            <p><strong></strong><span id="content-display"></span></p>
+            <p><strong></strong></p>
+            <img id="image-display" src="" >
+            <p><strong></strong></p>
+            <video id="video-display" src="" controls></video>
+            
+        </div>
+    </section>
+</div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

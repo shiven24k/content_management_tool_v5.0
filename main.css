@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Reset some default styles */
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+@font-face {
+  font-family: "crotah";
+  src: url("./src/Crotah.ttf");
+}
+
+/* section {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #edf3ff60;
+  
+} */
+
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #6a6a6a80;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+textarea:focus,
+input[type="file"]:focus {
+  border-color: #1E88E5;
+}
+
+
+
+/* button[type="submit"] {
+  background-color: #1E88E5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #1f67c0;
+} */
+
+button{
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  color: white;
+  font-size: 18px;
+  box-shadow: 2px 2px 7px 0px black;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+button::before {
+  content: "";
+  background-color: black;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+  z-index: -1;
+}
+button:hover::before{
+ transform: scaleX(1);
+}
+#submitted-content {
+  margin-top: 30px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#content-display {
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+
+#image-display,
+#video-display {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#title-display,
+#content-display {
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+
+#image-display,
+#video-display {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#end-part {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
