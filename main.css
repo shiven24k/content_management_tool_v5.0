@@ -13,6 +13,11 @@
   font-family: "crotah";
   src: url("./src/Crotah.ttf");
 }
+@font-face {
+  font-family: "roboto";
+  src: url("./src/Roboto.ttf");
+}
+
 
 /* section {
   margin: 20px auto;
@@ -22,10 +27,14 @@
   
 } */
 
-
+h1{
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.722);
+}
 
 .form-group {
   margin-bottom: 20px;
+  font-family: roboto;
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.722);
 }
 
 label {

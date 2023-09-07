@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="main.css">
     <title>Content Management Tool</title>
 </head>
-<body class="bg-yellow-400">
-    <header class="flex justify-center align-center bg-gradient-to-b from-yellow-600 ">
+<body class="bg-blue-400">
+    <header class="flex justify-center align-center bg-gradient-to-b from-blue-600 ">
         <h1 class="text-[5em] p-7 font-bold font-crotah text-white ">The Blog Maker</h1>
     </header>
      <div class=" p-14 flex justify-evenly">
-    <section class=" m-2 max-w-[500px] bg-yellow-300  p-14 text-white font-mono shadow-md rounded-lg">
-        <form class="gap-14" id="BlogForm" enctype="multipart/form-data">
+    <section class=" m-2 max-w-[500px] bg-blue-300  p-14 text-white font-mono shadow-md rounded-lg font-roboto">
+        <form class="gap-14 " id="BlogForm" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input class="rounded-md shadow-md text-black" type="text" id="title" name="title" required>
@@ -27,6 +27,10 @@
                 <input type="file" id="image" name="image" accept="image/*" required>
             </div>
             <div class="form-group">
+                <label for="morecontent">Add More</label>
+                <textarea class="rounded-lg shadow-md text-black" id="morecontent" name="morecontent" required></textarea>
+            </div>
+            <div class="form-group">
                 <label for="video">Video</label>
                 <input type="file" id="video" name="video" accept="video/*" required>
             </div>
@@ -36,17 +40,18 @@
         </form>
 
     </section>
-    <section class=" m-2 max-w-[500px] bg-yellow-300  p-14 text-white font-mono shadow-md rounded-lg">
+    <section class=" m-2 max-w-[500px] bg-blue-300  p-14 text-white shadow-md rounded-lg">
        
         <div id="submitted-content">
             <h1></h1>
-            <p><strong></strong><span id="title-display"></span></p>
+            <p class="text-center font-bold font-lg "><strong></strong><span id="title-display"></span></p><br>
             <p><strong></strong><span id="content-display"></span></p>
             <p><strong></strong></p>
-            <img id="image-display" src="" >
+            <img class="object-contain object-center h-44 w-44" id="image-display" src="" >
             <p><strong></strong></p>
-            <video id="video-display" src="" controls></video>
-            
+            <p><strong></strong><span id="more-content-display"></span></p>
+            <video class="object-contain object-center h-54 w-64 " id="video-display" src="" ></video>
+            <h3 id="end-part"></h3>
         </div>
     </section>
 </div>
