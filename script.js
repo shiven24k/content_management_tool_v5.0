@@ -1,5 +1,16 @@
+function hideVideo() {
+  var x = document.getElementById("vid");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 document.addEventListener('DOMContentLoaded', () => {
-    const blogForm = document.getElementById('BlogForm');
+   
+  
+  
+  const blogForm = document.getElementById('BlogForm');
     const titleDisplay = document.getElementById('title-display');
     const contentDisplay = document.getElementById('content-display');
     const imageDisplay = document.getElementById('image-display');

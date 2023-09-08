@@ -1,2 +1,3 @@
-# SANDEEP-TASK1
-MY INTERNSHIP TASK 1 @ BHARATINTERN 
+Before starting run
+npm install
+npm install node

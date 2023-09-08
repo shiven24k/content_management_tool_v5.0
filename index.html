@@ -10,8 +10,8 @@
     <header class="flex justify-center align-center bg-gradient-to-b from-blue-600 ">
         <h1 class="text-[5em] p-7 font-bold font-crotah text-white ">The Blog Maker</h1>
     </header>
-     <div class=" p-14 flex justify-evenly">
-    <section class=" m-2 max-w-[500px] bg-blue-300  p-14 text-white font-mono shadow-md rounded-lg font-roboto">
+     <div class=" p-15 flex justify-between">
+    <section class=" sticky m-2 w-[40em] h-[40em] bg-blue-300  p-14 text-white font-mono shadow-md rounded-lg font-roboto">
         <form class="gap-14 " id="BlogForm" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="title">Title</label>
@@ -35,22 +35,22 @@
                 <input type="file" id="video" name="video" accept="video/*" required>
             </div>
             <div >
-                <button type="submit">Submit</button>
+                <button onclick="hideVideo()" type="submit">Submit</button>
             </div>
         </form>
 
     </section>
-    <section class=" m-2 max-w-[500px] bg-blue-300  p-14 text-white shadow-md rounded-lg">
+    <section class=" m-2 w-[90em] h-[150em] bg-blue-300  p-14 text-white shadow-md rounded-lg">
        
         <div id="submitted-content">
             <h1></h1>
-            <p class="text-center font-bold font-lg "><strong></strong><span id="title-display"></span></p><br>
+            <p class="text-center font-extrabold text-2xl "><strong></strong><span id="title-display"></span></p><br>
             <p><strong></strong><span id="content-display"></span></p>
             <p><strong></strong></p>
-            <img class="object-contain object-center h-44 w-44" id="image-display" src="" >
+            <img class="object-contain object-center h-84 w-84" id="image-display" src="" >
             <p><strong></strong></p>
             <p><strong></strong><span id="more-content-display"></span></p>
-            <video class="object-contain object-center h-54 w-64 " id="video-display" src="" ></video>
+            <div id="vid" hidden="hidden"><video class="object-contain object-center h-84 w-94 " id="video-display" src="" controls ></video></div>
             <h3 id="end-part"></h3>
         </div>
     </section>

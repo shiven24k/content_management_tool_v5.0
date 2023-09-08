@@ -50,28 +50,25 @@ input[type="file"] {
   transition: border-color 0.3s;
 }
 
-textarea:focus,
-input[type="file"]:focus {
-  border-color: #1E88E5;
-}
 
 
 
-/* button[type="submit"] {
-  background-color: #1E88E5;
+  button[type="submit"] {
+  background-color: #459be5;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-}
+} 
 
 button[type="submit"]:hover {
   background-color: #1f67c0;
-} */
+} 
 
 button{
+  background-color: red;
   text-align: center;
   padding: 0.5rem 0.5rem;
   color: white;
@@ -83,7 +80,7 @@ button{
 }
 button::before {
   content: "";
-  background-color: black;
+  background-color: rgb(255, 0, 0);
   border-radius: 5px;
   position: absolute;
   top: 0;
